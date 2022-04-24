@@ -63,8 +63,9 @@ function App() {
     <div className="App">
       <Container>
         <Row>
+          <b>Players:</b>
           <Col>
-            <br />
+            <p />
             <Stack gap={3}>
               { players.map(player => {
                 return (
@@ -131,7 +132,7 @@ function App() {
             <br />
             {
               uniqueFights.length !== 0 && <Row>
-                <Accordion>
+                <Accordion defaultActiveKey="0">
                   {
                     uniqueFights.map((fight, index) => {
                       return (
